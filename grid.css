@@ -1,0 +1,32 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease, border-width 0.3s ease;
+  }
+  
+  .conteiner img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+    border-color: #050505;
+    border-width: 6px;
+  }
+  
+  .item:hover img {
+    transform: scale(1.5);
+  }
